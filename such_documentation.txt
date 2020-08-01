@@ -1,0 +1,39 @@
+the 12 uniselectors (hereafter: unis) are switches that you toggle between 1 and 0 in order to enter instructions
+the load button loads the current set of 12 uniselector bits
+the potatOS key functions as a shift key to be used for certain instructions
+
+first four unis are instruction bits
+
+second four are usually the first register location (in binary)
+
+second four are usually the first register location (in binary)
+
+current supported instructions:
+0000 = add 1st reg to 2nd reg, store in 2nd
+0000 + SHIFT makes 1st reg slot just input a number (up to 15), adds it to 2nd reg
+
+0001 = subtract 1st reg from 2nd reg, store in 2nd
+0000 + SHIFT makes 1st reg slot just input a number (up to 15), subtracts it from 2nd reg
+
+0010 = multiply 1st reg from 2nd reg, store in 2nd
+0000 + SHIFT makes 1st reg slot just input a number (up to 15), mult it by 2nd reg
+
+0011 = clear either two regs(if diff regs entered) or just one reg(by entering the same reg twice)
+
+0100 = flip sign of either two regs(if diff regs entered) or just one reg(by entering the same reg twice)
+
+0101 = move reg1 into reg2
+0101 + SHIFT makes 1st reg slot just input a number (up to 15), moves it into 2nd reg
+
+0110 // nothing yet
+
+0111 = jump, nowhere close to finished yet
+
+1000 // nothing yet
+
+1001 = prints the ascii equivalent of the value of 1st reg, the number of times specified by the raw number of 2nd reg slot (up to 15)
+.
+.//nothing yet lol
+.
+.
+1111 = makes all 8 unis after the first 4 function to input a number (up to 255) into reg0

@@ -1,0 +1,33 @@
+1111/11111111; ldb / $two_five_five
+
+0101/0000/1111; mov / r_zero / s_fifteen ... two times
+0101/0000/1111;
+
+S0101/1111/1111;S from_uni_mov / $one_five / s_fifteen ... three times
+S0101/1111/1111;S
+S0101/1111/1111;S
+
+0000/1111/0001; add / s_fifteen / r_one
+
+0011/1111/1111; clr / s_fifteen ... three times
+0011/1111/1111;
+0011/1111/1111;
+
+0000/1111/0001; add / s_fifteen / r_one
+
+
+DELETE BEFORE LOADING:
+ldb 255;
+
+mov r0 s15;
+mov r0 s15;
+
+s_mov $15 s15;
+
+add s15 r1;
+
+clr s15;
+clr s15;
+clr s15;
+
+add s15 r1;
